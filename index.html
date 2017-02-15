@@ -6,10 +6,15 @@
 
 <body>
 
-<video width="320" height="240" controls>
-  <source src="http://video.parlamentodeandalucia.es/oai/asx.asp?id=5262">
-Your browser does not support the video tag.
-</video>
+
+<object type="application/x-vlc-plugin" data="http://server.example.com/video1.mpeg" width="400" height="300" id="video1">
+     <param name="movie" value="http://192.168.21.55:8080/seneca1/0000005262.wmv"/>
+     <embed type="application/x-vlc-plugin" name="video1"
+     autoplay="no" loop="no" width="400" height="300"
+     target="http://192.168.21.55:8080/seneca1/0000005262.wmv" />
+     <a href="http://192.168.21.55:8080/seneca1/0000005262.wmv">Download Video1</a>
+</object>
+
 
 </body>
 </html>
